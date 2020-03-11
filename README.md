@@ -8,8 +8,8 @@ To get fish to work with virtualenv, you need to do the following
   * Use the `config.fish` in this repo
   * Add virtualfish to prompt
     * Edit file `/usr/share/fish/functions/fish_prompt.fish`
-    ```
-    if set -q VIRTUAL_ENV
+```
+if set -q VIRTUAL_ENV
     echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
 end
 ```
