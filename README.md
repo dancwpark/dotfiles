@@ -13,6 +13,7 @@ if set -q VIRTUAL_ENV
     echo -n -s (set_color -b blue white) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
 end
 ```
+Add the above to somewhere in the `fish_prompt` function.
 
 ## Neovim
 After installation, `vim-plug` needs to be installed.
