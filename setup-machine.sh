@@ -1,7 +1,6 @@
 #!/bin/sh
 APPS="build-essential \
 docker.io \
-fish \
 gcc \
 git \
 libc6-dev-i386 \
@@ -20,9 +19,8 @@ apt install $APPS -y
 apt clean
 apt autoremove -y
 
-# fish --> chsh -s /usr/bin/fish
-
 # ALIASES
 ALIASES="alias vi='nvim'
 alias vim='nvim'"
 echo "$ALIASES" > ~/.bash_aliases
+## TODO: Also for zshrc equivalent
