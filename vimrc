@@ -1,4 +1,5 @@
 let g:solarized_termcolors = 256
+set mouse=a "trying out
 set number
 set modeline
 set tabstop=8
