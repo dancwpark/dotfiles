@@ -1,0 +1,20 @@
+# My aliases for zsh
+alias python="python3"
+alias sejong="docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -it --rm -v'$(PWD):/home/sejong/challenge' --name sejong sejong"
+
+
+
+# Function
+code() {
+    if [[ $# = 0 ]]; then
+        Open "/Applications/Visual Studio Code.app/"
+    elif [[ $# = 1 ]]; then
+        if [[ -f $1  || -d $1 ]]; then
+            Open "/Applications/Visual Studio Code.app/" --args $1
+        else
+            echo "$1 does not exist!.";
+        fi
+    else
+        echo "Wrong inputs";
+    fi
+}
