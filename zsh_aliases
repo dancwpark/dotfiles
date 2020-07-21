@@ -3,8 +3,11 @@ alias python="python3"
 alias sejong='docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -it --rm -v"$(PWD):/home/sejong/challenge" --name sejong sejong'
 
 
+#############
+# Functions #
+#############
 
-# Function
+# Open up VSCode on Macbook in PWD
 code() {
     if [[ $# = 0 ]]; then
         Open "/Applications/Visual Studio Code.app/"
@@ -21,4 +24,29 @@ code() {
     else
         echo "Wrong inputs";
     fi
+}
+
+# change into a directory and print contents
+c() {
+  if [[ $# = 0 ]]; then
+      cd
+  elif [[ $# > 1 ]]; then
+      echo "Too many inputs";
+  else
+      cd $1;
+      ls;
+  fi
+}
+
+# make a directory and then move into that directory
+mdir() {
+    if [[ $# = 0 ]]; then
+        echo "??? Can't make a directory without a name, dummy"
+    elif [[ $# > 1 ]]; then
+        echo "?? too many names!"
+    else
+        mkdir $1;
+        cd $1;
+    fi
+
 }
