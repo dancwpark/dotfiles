@@ -1,3 +1,6 @@
+" Place this file into:
+" ~/.config/nvim/
+"
 " Leader Key <SPACE>
 let mapleader="\<SPACE>"
 
