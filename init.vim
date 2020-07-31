@@ -115,6 +115,7 @@ let NERDTreeShowHidden=1
 
 " Basic VIm
 " =====================================
+set mouse=a
 set showmatch			        " Show matching brackets.
 set number			          " Show line numbers
 set formatoptions+=o		  " Conitinue comment marker in new lines
