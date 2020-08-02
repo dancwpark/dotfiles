@@ -42,6 +42,7 @@
   * `ctrl+v; A`: append something to highlighted lines
   * `ctrl+v; d`: delete highlighted portion
   * `ctrl+v; D`: for highlighted lines, delete from highlighted to end of line
+  * `o`        : new line under current line
 * Search and Replace
   * `/$search`: search for $search
   * `:noh`: remove highlighting from search
