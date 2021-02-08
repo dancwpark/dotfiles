@@ -1,8 +1,0 @@
-# Aliases added by dancwpark for comfort
-## alias for preferred ls
-alias l='ls -l'
-
-## For office desktop only! (research stuff)
-alias research3='conda activate tf-gpu3'
-alias research2='conda activate tf-gpu2'
-
