@@ -19,17 +19,20 @@ apt autoremove -y
 # tmux config
 cp tmux.conf ~/.tmux.conf
 
-# gdb
+# pwntools
+python3 -m pip install pwntools
+
+# gdb -- pwndbg
 python3 -m pip install keystone-engine \
   unicorn \
   capstone \
   ropper \
   virtualenv
-wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
-echo source ~/.gdbinit-gef.py >> ~/.gdbinit
 echo "set diassembly-flavor intel\nset $SHOWSTACK=0\nset detach-on-fork off\nset follow-fork-mode child" >> ~/.gdbinit
+git clone https://github.com/pwndbg/pwndbg ~/tools/ && ../pwndbg/setup.sh
 
-# Virtual environments
+
+# Virtual environments (mostly for angr)
 mkdir ~/venv
 python3 -m venv ~/venv/angr && \
   source ~/venv/example/bin/activate && \

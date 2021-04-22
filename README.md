@@ -15,18 +15,5 @@ Afterwards, need to install, update, and clean
 Also can check plugin status and update `vim-plug` with `:PlugStatus` and
 `:PlugUpgrade`.
 
-# Set-up script installs?
-* build-essential
-* docker.io
-* gcc
-* git
-* libc6-dev-i386
-* libffi-dev
-* neovim
-* python
-* python-pip
-* python3
-* python3-dev
-* python3-pip
-* tmux
-* virtualenvwrapper
+## Set-up script installs?
+Scripts should be run from `~/tools/dotfiles/`

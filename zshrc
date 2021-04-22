@@ -19,7 +19,6 @@ export PATH=$PATH:$HOME/.config/coc/extensions/coc-clangd-data/install/11.0.0/cl
 ## For mac
 PYTHONPATH="/Applications/Binary Ninja.app/Contents/Resources/python"
 ## For nix
-#
 export PYTHONPATH
 
 ###############
