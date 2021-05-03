@@ -10,15 +10,16 @@
 ##############
 
 # OpenJDK (for ghidra)
-export PATH=~/tools/jdk-14.jdk/Contents/Home/bin:$PATH
+export PATH="":$PATH
 
 # clangd (used in nvim coc)
-export PATH=$PATH:$HOME/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin
+export PATH=$PATH:""
 
 # Binaryninja
 ## For mac
 PYTHONPATH="/Applications/Binary Ninja.app/Contents/Resources/python"
-## For nix
+# or
+# PYTHONPATH=""
 export PYTHONPATH
 
 ###############

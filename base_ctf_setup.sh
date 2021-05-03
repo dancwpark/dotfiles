@@ -35,6 +35,6 @@ git clone https://github.com/pwndbg/pwndbg ~/tools/ && ../pwndbg/setup.sh
 # Virtual environments (mostly for angr)
 mkdir ~/venv
 python3 -m venv ~/venv/angr && \
-  source ~/venv/example/bin/activate && \
+  source ~/venv/angr/bin/activate && \
   python3 -m pip install angr && \
   deactivate
