@@ -17,6 +17,7 @@ export PATH=$HOME:$PATH
 ## For mac
 PYTHONPATH="/Applications/Binary Ninja.app/Contents/Resources/python"
 ## For nix
+# PYTHONPATH=""
 export PYTHONPATH
 
 ###############
