@@ -30,7 +30,7 @@ python3 -m pip install keystone-engine \
   virtualenv
 wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
 echo source ~/.gdbinit-gef.py >> ~/.gdbinit
-echo "set diassembly-flavor intel\nset $SHOWSTACK=0\nset detach-on-fork off\nset follow-fork-mode child" >> ~/.gdbinit
+echo "set disassembly-flavor intel\nset $SHOWSTACK=0\nset detach-on-fork off\nset follow-fork-mode child" >> ~/.gdbinit
 
 
 # Virtual environments (mostly for angr)
