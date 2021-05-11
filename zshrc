@@ -10,16 +10,13 @@
 ##############
 
 # OpenJDK (for ghidra)
-export PATH=~/tools/jdk-14.jdk/Contents/Home/bin:$PATH
-
-# clangd (used in nvim coc)
-export PATH=$PATH:$HOME/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin
+## FILL IN
+export PATH=$HOME:$PATH
 
 # Binaryninja
 ## For mac
 PYTHONPATH="/Applications/Binary Ninja.app/Contents/Resources/python"
 ## For nix
-#
 export PYTHONPATH
 
 ###############
@@ -95,28 +92,3 @@ source $ZSH/oh-my-zsh.sh
 if [ -f $HOME/.zsh_aliases ]; then 
     . $HOME/.zsh_aliases
 fi
-
-
-##########################
-## MISC -- manual setup ##
-##########################
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/danielpark/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/danielpark/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/danielpark/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/danielpark/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# opam configuration
-test -r /Users/danielpark/.opam/opam-init/init.zsh && . /Users/danielpark/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f "/Users/danielpark/.ghcup/env" ] && source "/Users/danielpark/.ghcup/env" # ghcup-env
