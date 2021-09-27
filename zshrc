@@ -13,16 +13,14 @@
 ## FILL IN
 export PATH=$HOME:$PATH
 
-# Binaryninja
-## For mac
-PYTHONPATH="/Applications/Binary Ninja.app/Contents/Resources/python"
-## For nix
-# PYTHONPATH=""
-export PYTHONPATH
-
 ###############
 ## Oh-my-zsh ##
 ###############
+
+# Installation
+# sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+# or
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME"/.oh-my-zsh"

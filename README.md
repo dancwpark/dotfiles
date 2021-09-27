@@ -1,5 +1,8 @@
 # Configuring work environment
 
+## Oh-My-Zsh
+Instructions are on `zshrc`
+
 ## Neovim
 After installation, `vim-plug` needs to be installed.
 ```
