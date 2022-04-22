@@ -11,11 +11,6 @@
 " ========================================================================
 call plug#begin('~/.vim/plugged')
 " ------------------------------------
-" COC
-" https://github.com/neoclide/coc.nvim
-" CoCInstall coc-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " NERD Tree - tree explorer
 " https://github.com/scrooloose/nerdtree
 " http://usevim.com/2012/07/18/nerdtree/
