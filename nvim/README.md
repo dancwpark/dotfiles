@@ -1,22 +1,21 @@
-# Quick rundown on nvim usage
-Generally using nvim for all text editing within one instance.
+# Neovim Config
 
-## General
-`ctrl+n`: open up NERDTree
-`ctrl+w h/j/k/l/up/down/left/right`: move window
-`gt`: cycle tab
-`gT`: previous tab
-`#gt`: go to # tab
+## Install
+* fd
 
+* ripgrep
+    * `brew install ripgrep`
+    * `$ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb;  sudo dpkg -i ripgrep_14.1.0-1_amd64.deb`
 
-## NERDTree
-`m`: file options
-`m -> a`: new file
-`i`: open file with horizontal split
-`s`: open file with verticla split
-`t`: open file in new tab
+* Nerd Font
+    * on mac, have to change iterm to use the nerd font
 
+*
 
-## TODO
-[] May remove some custom tmux bindings and use for nvim
-  * `ctrl+w [direction]` is a lot of work
+## Help
+A lot of `:TSUpdate` and `:so`
+
+`:TSInstallSync all`
+
+Install lsp through mason
+`:LspInstall`
