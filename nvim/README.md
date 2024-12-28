@@ -1,21 +1,25 @@
-# Neovim Config
+# NVIM setup
 
-## Install
-* fd
+## Install neovim
+maybe install `gettext`
+`git clone https://github.com/neovim/neovim`
+`make CMAKE_BUILD_TYPE=Release`
+`sudo make install`
 
+## Setup
+install
+* fd (fd-finl)
 * ripgrep
-    * `brew install ripgrep`
-    * `$ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb;  sudo dpkg -i ripgrep_14.1.0-1_amd64.deb`
+* luarocks
+* npm
 
-* Nerd Font
-    * on mac, have to change iterm to use the nerd font
+Download: 
+https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip
 
-*
+Unzip in font folder
+* debian: `mkdir ~/.local/share/fonts`
 
-## Help
-A lot of `:TSUpdate` and `:so`
+Move fonts 
 
-`:TSInstallSync all`
+`fc-cache -fv`
 
-Install lsp through mason
-`:LspInstall`
